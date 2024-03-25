@@ -15,6 +15,8 @@ const getQuotes = async () => {
   // On this new page:
   // - open the "http://quotes.toscrape.com/" website
   // - wait until the dom content is loaded (HTML is ready)
+
+  
   await page.goto("http://quotes.toscrape.com/", {
     waitUntil: "domcontentloaded",
   });
@@ -40,7 +42,7 @@ const getQuotes = async () => {
    // Click on the "Next page" button
   await page.click(".pager > .next > a");
   // Close the browser
-  await browser.close();
+  //await browser.close();
 };
 
 
